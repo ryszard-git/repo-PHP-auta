@@ -104,7 +104,6 @@ if (isset($_POST['submit'])) {
 
 	$mysqli->close();
 } //if isset
-//komentarz dla gita
 $stronka->DomknijBlok(); // div kontakt
 $stronka->DomknijBlok();
 $stronka->WyswietlStopke();
