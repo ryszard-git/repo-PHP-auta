@@ -85,10 +85,8 @@ ul a:link, ul a:visited {
 	display: block;
 	width: 135px;
 	text-decoration: none;
-	background-color: #ccc;
-	color: #000000;
+	color: #fff;
 	padding: 5px;
-	border: 2px outset #ccc;
 
 /* wysokość przycisku */
 	height: 50px;
@@ -97,15 +95,14 @@ ul a:link, ul a:visited {
 	border-radius: 15px;
 }
 
-/* zmiana koloru przycisku po najechaniu myszą */
+/* zmiana przycisku po najechaniu myszą */
 
 ul a:hover {
-	background-color: #AAA;
+	border: 1px solid #fff;
 }
 
 ul a:active {
-	border-style: inset;
-	padding: 7px 3px 3px 7px;
+	border:1px solid #0f0;
 }
 
 
@@ -116,7 +113,12 @@ ul a:active {
 #menu li:hover ul {z-index: 1; visibility: visible;}
 
 /* kolor odsyłacza wylogowania */
-a:link.logout, a:visited.logout, a:link, a:visited {
+a:link.logout, a:visited.logout {
+	color:#0f0;
+}
+
+a:link, a:visited
+{
 	color: #00c6d6;
 }
 
