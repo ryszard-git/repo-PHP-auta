@@ -18,23 +18,19 @@ body {
 .topleft {
     width: 100%;
     height: 150px;
-/*    background-color: #4F6F9E;*/
 }
 
 .menulewe {
     float: left;
     width: 150px;
     height: auto;
-/*    background-color: #4F6F9E;*/
 }
 
 .tresc {
 	position: relative;
     float: right;
     width: 810px;
-/*    background-color: #78743C;*/
-/*	background: -moz-linear-gradient(left, black, #0FA348); */
-     min-height: 625px; /*565px*/
+    min-height: 625px; /*565px*/
 	padding: 10px;
 }
 
@@ -90,7 +86,6 @@ ul a:link, ul a:visited {
 
 /* wysokość przycisku */
 	height: 50px;
-	text-align: center;
 	line-height: 25px;
 	border-radius: 15px;
 }
@@ -99,6 +94,7 @@ ul a:link, ul a:visited {
 
 ul a:hover {
 	border: 1px solid #fff;
+	text-align: center;
 }
 
 ul a:active {
