@@ -1,5 +1,5 @@
-create database test_auta character set 'utf8' collate 'utf8_polish_ci';
-use test_auta;
+create database samochody character set 'utf8' collate 'utf8_polish_ci';
+use samochody;
 
 create table uzytkownicy
 (
@@ -36,10 +36,10 @@ data_zwrotu date not null,
 czy_wynajete char(3) not null
 ) type=InnoDB;
 
-grant all on test_auta.*
-to 'ala'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON samochody.*
+TO 'ala'@'localhost' IDENTIFIED BY 'skok2009';
 
 
 INSERT INTO uzytkownicy (login_name, haslo, is_admin)
-	VALUES ("admin", "d033e22ae348aeb5660fc2140aec35850c4da997", "TAK");
+	VALUES ("admin", "sha1("admin"), "TAK");
 
