@@ -1,2 +1,2 @@
 # repo-PHP-auta
-Komis i wypozyczalnia samochodow w PHP/MySQL.
+Komis i wypozyczalnia samochodow. Aplikacja napisana w PHP/MySQL.
