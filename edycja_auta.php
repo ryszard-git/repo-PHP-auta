@@ -52,6 +52,7 @@ $display_block="
 <select name=\"idauta\">
 $option_block
 </select>
+<br>
 <input type=\"submit\" name=\"submit1\" value=\"Wybierz auto\"/></p>
 </form>
 ";

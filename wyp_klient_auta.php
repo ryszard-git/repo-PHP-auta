@@ -50,12 +50,14 @@ while ($wiersz=$result->fetch_object()) {
 $display_block="
 <form method=\"post\" action=\"wyp_klient_auta_1.php\">
 <table>
-<p><tr><td>wybierz klienta:</td>
+<p><tr><td>Wybierz klienta:</td>
 <td><select name=\"id_klienta\" size=\"3\">
 $option_block
-</select></td>
-<td><input type=\"submit\" name=\"submit\" value=\"Wykonaj zapytanie\"/></td></tr></p>
+</select></td></tr>
+</p>
 </table>
+<br>
+<input type=\"submit\" name=\"submit\" value=\"Wykonaj zapytanie\"/>
 </form>
 ";
 echo "$display_block";

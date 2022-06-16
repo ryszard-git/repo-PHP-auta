@@ -161,6 +161,7 @@ $data_zwrotu_option_rr
 <select name=\"idauta\">
 $option_block
 </select>
+<br>
 <input type=\"submit\" name=\"submit\" value=\"Zarezerwuj auto\"/></p>
 </form>
 ";

@@ -101,7 +101,7 @@ switch ($menu)
 			</li>
 			 <li><a href="przeglad_rezerwacji.php">Przeglądanie rezerwacji</a></li>
 			 <li><a href="dodaj_usera.php">Dodanie użytkownika</a></li>
-			 <li><a href="edycja_usera.php">Zmiana danych użytkownika</a></li>
+			 <li><a href="edycja_usera.php">Edycja danych użytkownika</a></li>
 			 <li><a href="zm_hasla_user.php">Zmiana hasła</a></li>
 			 <li><a href="ustaw_hasla_tymczas.php">Reset hasła</a></li>
 		</ul>
@@ -117,7 +117,7 @@ switch ($menu)
 		<ul>
 			 <li><a href="ceny.php">Ceny</a></li>
 			 <li><a href="kontakt.php">Kontakt</a></li>
-			 <li><a href="edycja_usera.php">Zmiana danych użytkownika</a></li>
+			 <li><a href="edycja_usera.php">Edycja danych użytkownika</a></li>
 			 <li><a href="przeglad_aut.php">Przeglądanie aut do wypożyczenia</a></li>
 			 <li><a href="rezerwacja_auta.php">Rezerwacja</a></li>
 			 <li><a href="zm_hasla_user.php">Zmiana hasła</a></li>

@@ -24,6 +24,7 @@ body {
     float: left;
     width: 150px;
     height: auto;
+	text-decoration: underline;
 }
 
 .tresc {
@@ -107,6 +108,10 @@ ul a:active {
 #menu ul {visibility: hidden; position: absolute; top: 0; left: 100%; padding-left: 1px;}
 #menu li {padding-bottom: 1px; line-height: 0; position: relative;}
 #menu li:hover ul {z-index: 1; visibility: visible;}
+#menu > li > ul > li > a
+{
+	text-decoration: underline;
+}
 
 /* kolor odsyłacza wylogowania */
 a:link.logout, a:visited.logout {
@@ -121,17 +126,57 @@ a:link, a:visited
 p.wyloguj /* info o zalogowanym użytkowniku */
 {
 	text-align: right;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .tabela { 
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
+	font-size: 16px;
 } /* wyśrodkowanie poziome tabeli */
 
 table.przeglad td {
 	padding:5px;
 	text-align:center;
+	font-size: 16px;
 }
 
+.button-rezerwuj, input[type=submit]
+{
+	background-color: rgb(12, 139, 12);
+	color: #fff;
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: bold;
+	border: 0;
+	margin-top: 10px;
+}
 
+input[type=text], input[type=password]
+{
+	height: 30px;
+	border-radius: 15px;
+	padding: 0 10px;
+	font-size: 16px;
+}
+
+input[type=file]::-webkit-file-upload-button
+{
+	font-size: 16px;
+	border-radius: 15px;
+	padding: 5px;
+	background-color: rgb(12, 139, 12);
+	color: #fff;
+	cursor: pointer;
+}
+
+select
+{
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 5px;
+}

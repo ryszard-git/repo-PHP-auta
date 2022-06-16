@@ -51,8 +51,9 @@ while ($wiersz=$result->fetch_object()) {
 	echo "<tr><td><span style=\"font-size: 18px;\">$marka_auta</span><br/></td></tr>";
 	echo "<tr><td><img src=\"$zdjecie\" alt=\"auto\" width=\"250px\" height=\"150px\" /></td>";
 	echo "<td>Opłata za wypożyczenie auta: <strong>$cena</strong> PLN za dobę</td>";
-	echo "<td><a href=\"rezerwacja_auta.php?idauta=$id_auta\"><img src=\"grafika/przycisk.jpeg\" alt=\"przycisk\"/></a></td></tr>";
+	echo "<td><a href=\"rezerwacja_auta.php?idauta=$id_auta\"><button type=\"button\" class=\"button-rezerwuj\">Rezerwuj auto</button></a></td></tr>";
 	echo '<tr><td colspan="3"><hr/><br/></td></tr>';
+
 }
 echo '</table>';
 $mysqli->close();

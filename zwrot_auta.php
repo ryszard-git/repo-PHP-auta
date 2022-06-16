@@ -52,6 +52,7 @@ $display_block="
 <select name=\"id_auta\">
 $option_block
 </select>
+<br>
 <input type=\"submit\" name=\"submit\" value=\"Zwrot auta\"/></p>
 </form>
 <br/><br/><br/>
