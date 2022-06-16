@@ -14,7 +14,7 @@ $stronka->WyswietlMenu("MenuGlowneUsera");
 $stronka->WyswietlZawartosc();
 
 $login=stripslashes($_SESSION['login_name']);
-echo '<p class="wyloguj">Zalogowany: '.$login.' &nbsp;&nbsp;[ <a class="logout" href="wyloguj.php">Wyloguj</a> ]</p>';
+echo '<p class="wyloguj">Zalogowany: <span>'.$login.'</span> &nbsp;&nbsp;[ <a class="logout" href="wyloguj.php">Wyloguj</a> ]</p>';
 ?>
 
 	<div class="kontakt"><br/><br/>

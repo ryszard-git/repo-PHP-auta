@@ -157,7 +157,7 @@ $data_zwrotu_option_rr
 </select></td></tr></p>
 
 </table>
-<p>Wybór auta:
+<p>Wybór auta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <select name=\"idauta\">
 $option_block
 </select>

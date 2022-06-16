@@ -126,6 +126,10 @@ a:link, a:visited
 p.wyloguj /* info o zalogowanym użytkowniku */
 {
 	text-align: right;
+}
+
+p.wyloguj > span
+{
 	font-style: italic;
 	font-weight: bold;
 }
@@ -178,5 +182,5 @@ select
 {
 	font-size: 16px;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 15px;
 }

@@ -183,7 +183,7 @@ public function DomknijBlok()
 ?>
 <div class="foot">
 
-	&copy; 2010-2021 Wszystkie prawa zastrzeżone<br/>
+	&copy; 2010-2022 Wszystkie prawa zastrzeżone<br/>
 	<a href="mailto:ryszard@rkhost.strefa.pl">e-mail do administratora aplikacji</a>
 </div>
 </div>

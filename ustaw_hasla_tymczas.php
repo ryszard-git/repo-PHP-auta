@@ -48,7 +48,7 @@ echo '<div class="kontakt">';
 <form method="post" action="">
 <table>
 <tr><td>login:</td><td><?php echo $select; ?></td></tr>
-<tr><td>nowe hasło:</td><td><input type="password" name="nowe_haslo" size="25"/></td></tr>
+<tr><td>nowe hasło:</td><td><input type="password" name="nowe_haslo" size="30"/></td></tr>
 </table>
 <p><input type="submit" name="submit" value="Ustaw hasło"/></p>
 </form>
