@@ -42,38 +42,31 @@ $liczba_klientow = $result->num_rows;
 
 echo "<p>Lista klientów zawiera ";
 echo $liczba_klientow . " pozycji.</p>";
-//*********************************************************************
-/*if ($liczba_klientow!=0) {
-	echo '<table class="przeglad" border="0" cellpadding="15">';
-	echo "<tr style=background-color:#444;><th> Imię </th><th> Nazwisko </th><th> Nr telefonu </th><th> Marka auta </th><th> Data wynajmu </th><th> Data zwrotu </th></tr>";
-}*/
-//**********************************************************************
+
 if ($liczba_klientow!=0) {
 	echo '<div class="przeglad">'; //poczatek diva - pojemnika
-	echo "<tr style=background-color:#444;><th> Imię </th><th> Nazwisko </th><th> Nr telefonu </th><th> Marka auta </th><th> Data wynajmu </th><th> Data zwrotu </th></tr>";
-
-
+	echo "<div style=background-color:#444;><div> Imię </div><div> Nazwisko </div><div> Nr telefonu </div><div> Marka auta </div><div> Data wynajmu </div><div> Data zwrotu </div></div>";
 // wyświetlenie zestawienia wypożyczonych aut
 for ($nr_wiersza = 0; $nr_wiersza < $liczba_klientow; $nr_wiersza++)
-  {
+{
 // ***** ustawianie naprzemiennego koloru wierszy tabeli
 	$tr_wiersz=$nr_wiersza % 2;
     if ($tr_wiersz===0) { $kolor='#777' ; }
 	else { $kolor='#888' ; }
-    echo "<tr style=background-color:$kolor;>";
+    echo "<div style=background-color:$kolor;>";
 // ******************************************************
     // odczytanie kolejnego wiersza tabeli
     $wiersz = $result->fetch_row();
     $tekst="";
 
-    	for ($nr_kolumny = 0; $nr_kolumny < count($wiersz); $nr_kolumny++)
-    	{
-      	$tekst .= "<td>".$wiersz[$nr_kolumny]." </td>";
-    	}
+    for ($nr_kolumny = 0; $nr_kolumny < count($wiersz); $nr_kolumny++)
+	{
+		$tekst .= "<div>".$wiersz[$nr_kolumny]." </div>";
+	}
     echo $tekst;
-    echo "</tr>";
-  }
-echo "</table>";
+    echo "</div>";
+}
+echo "</div>"; // koniec diva pojemnika
 }
 
 $mysqli->close();
