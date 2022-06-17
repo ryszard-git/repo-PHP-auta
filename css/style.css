@@ -24,7 +24,6 @@ body {
     float: left;
     width: 150px;
     height: auto;
-	text-decoration: underline;
 }
 
 .tresc {
@@ -81,7 +80,6 @@ ul, ul li {
 ul a:link, ul a:visited {
 	display: block;
 	width: 135px;
-	text-decoration: none;
 	color: #fff;
 	padding: 5px;
 

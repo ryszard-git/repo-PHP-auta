@@ -42,11 +42,16 @@ $liczba_klientow = $result->num_rows;
 
 echo "<p>Lista klientów zawiera ";
 echo $liczba_klientow . " pozycji.</p>";
-
-if ($liczba_klientow!=0) {
+//*********************************************************************
+/*if ($liczba_klientow!=0) {
 	echo '<table class="przeglad" border="0" cellpadding="15">';
 	echo "<tr style=background-color:#444;><th> Imię </th><th> Nazwisko </th><th> Nr telefonu </th><th> Marka auta </th><th> Data wynajmu </th><th> Data zwrotu </th></tr>";
-}
+}*/
+//**********************************************************************
+if ($liczba_klientow!=0) {
+	echo '<div class="przeglad">'; //poczatek diva - pojemnika
+	echo "<tr style=background-color:#444;><th> Imię </th><th> Nazwisko </th><th> Nr telefonu </th><th> Marka auta </th><th> Data wynajmu </th><th> Data zwrotu </th></tr>";
+
 
 // wyświetlenie zestawienia wypożyczonych aut
 for ($nr_wiersza = 0; $nr_wiersza < $liczba_klientow; $nr_wiersza++)
@@ -69,6 +74,7 @@ for ($nr_wiersza = 0; $nr_wiersza < $liczba_klientow; $nr_wiersza++)
     echo "</tr>";
   }
 echo "</table>";
+}
 
 $mysqli->close();
 $stronka->DomknijBlok();
