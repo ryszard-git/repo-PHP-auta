@@ -44,8 +44,8 @@ echo "<p>Lista klientów zawiera ";
 echo $liczba_klientow . " pozycji.</p>";
 
 if ($liczba_klientow!=0) {
-	echo '<div class="przeglad">'; //poczatek diva - pojemnika
-	echo "<div style=background-color:#444;><div> Imię </div><div> Nazwisko </div><div> Nr telefonu </div><div> Marka auta </div><div> Data wynajmu </div><div> Data zwrotu </div></div>";
+	echo '<div class="przeglad-rezerwacji przeglad">'; //poczatek diva - pojemnika
+	echo "<div style='background-color:#444; font-weight:bold;'><div> Imię </div><div> Nazwisko </div><div> Nr telefonu </div><div> Marka auta </div><div> Data wynajmu </div><div> Data zwrotu </div></div>";
 // wyświetlenie zestawienia wypożyczonych aut
 for ($nr_wiersza = 0; $nr_wiersza < $liczba_klientow; $nr_wiersza++)
 {

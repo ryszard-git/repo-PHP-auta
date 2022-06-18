@@ -146,6 +146,22 @@ table.przeglad td {
 }
 */
 /* div zamiast table */
+
+.przeglad-rezerwacji
+{
+	--szerokosc-komorki: 15%; /* 6 kolumn */
+}
+
+.przeglad-auto-klient
+{
+	--szerokosc-komorki: 18.35%; /*5 kolumn */
+}
+
+.przeglad-klient-auto
+{
+	--szerokosc-komorki: 31.68%; /* 3 kolumny */
+}
+
 div.przeglad
 {
 	width: 90%;
@@ -162,12 +178,13 @@ div.przeglad > div
 
 div.przeglad > div > div
 {
-	width: 15%;
+	width: var(--szerokosc-komorki);
 	padding:5px;
 	text-align:center;
 	font-size: 16px;
 	border: 1px solid #fff;
 }
+/* div zamiast table - koniec*/
 
 .button-rezerwuj, input[type=submit]
 {
@@ -190,7 +207,7 @@ input[type=text], input[type=password]
 	font-size: 16px;
 }
 
-input[type=file]::-webkit-file-upload-button
+input[type=file]::file-selector-button
 {
 	font-size: 16px;
 	border-radius: 15px;

@@ -63,8 +63,8 @@ echo "<p>Lista klientów zawiera ";
 echo $liczba_klientow . " pozycji.</p>";
 
 if ($liczba_klientow > 0) {
-	echo '<table class="tabela" border="0" cellspacing="1" cellpadding="5">';
-	echo "<tr style=background-color:#444;><th>Imię</th><th>Nazwisko</th><th>Nr telefonu</th><th>Data wynajmu</th><th>Data zwrotu</th></tr>";
+	echo '<div class="przeglad-auto-klient przeglad">';
+	echo "<div style='background-color:#444; font-weight:bold;'><div>Imię</div><div>Nazwisko</div><div>Nr telefonu</div><div>Data wynajmu</div><div>Data zwrotu</div></div>";
 
 	// wyświetlenie zestawienia klientów
 	for ($nr_wiersza = 0; $nr_wiersza < $liczba_klientow; $nr_wiersza++)
@@ -73,7 +73,7 @@ if ($liczba_klientow > 0) {
 		$tr_wiersz=$nr_wiersza % 2;
 		if ($tr_wiersz===0) { $kolor='#777' ; }
 		else { $kolor='#888' ; }
-    		echo "<tr style=background-color:$kolor;>";
+    		echo "<div style=background-color:$kolor;>";
 // ******************************************************
 	    // odczytanie kolejnego wiersza tabeli
 	    $wiersz = $result->fetch_row();
@@ -81,13 +81,14 @@ if ($liczba_klientow > 0) {
 
 	    	for ($nr_kolumny = 0; $nr_kolumny < count($wiersz); $nr_kolumny++)
 	    	{
-	      	$tekst .= "<td>".$wiersz[$nr_kolumny]." </td>";
+	      	$tekst .= "<div>".$wiersz[$nr_kolumny]." </div>";
 	    	}
 	    echo $tekst;
-	    echo "</tr>";
+	    echo "</div>";
 	  }
-	echo "</table>";
+	echo "</div>";
 }
+
 $mysqli->close();
 $stronka->DomknijBlok();
 $stronka->WyswietlStopke();

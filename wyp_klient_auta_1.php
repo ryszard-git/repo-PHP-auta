@@ -65,8 +65,8 @@ echo "<p>Lista aut zawiera ";
 echo $liczba_aut . " pozycji.</p>";
 
 if ($liczba_aut > 0) {
-	echo '<table border="0" class="tabela" cellspacing="1" cellpadding="5">';
-	echo "<tr style=background-color:#444;><th>Marka auta</th><th>Data wynajmu</th><th>Data zwrotu</th></tr>";
+	echo '<div class="przeglad-klient-auto przeglad">';
+	echo "<div style='background-color:#444; font-weight:bold;'><div>Marka auta</div><div>Data wynajmu</div><div>Data zwrotu</div></div>";
 
 // wyświetlenie zestawienia wypożyczonych aut
 	for ($nr_wiersza = 0; $nr_wiersza < $liczba_aut; $nr_wiersza++)
@@ -75,7 +75,7 @@ if ($liczba_aut > 0) {
 		$tr_wiersz=$nr_wiersza % 2;
 		if ($tr_wiersz===0) { $kolor='#777' ; }
 		else { $kolor='#888' ; }
-    		echo "<tr style=background-color:$kolor;>";
+    		echo "<div style=background-color:$kolor;>";
 // ******************************************************
 	    // odczytanie kolejnego wiersza tabeli
 	    $wiersz = $result->fetch_row();
@@ -83,13 +83,14 @@ if ($liczba_aut > 0) {
 
 	    	for ($nr_kolumny = 0; $nr_kolumny < count($wiersz); $nr_kolumny++)
 	    	{
-	      	$tekst .= "<td>".$wiersz[$nr_kolumny]." </td>";
+	      	$tekst .= "<div>".$wiersz[$nr_kolumny]." </div>";
 	    	}
 	    echo $tekst;
-	    echo "</tr>";
+	    echo "</div>";
 	  }
-	echo "</table>";
+	echo "</div>";
 }
+
 $mysqli->close();
 $stronka->DomknijBlok();
 $stronka->WyswietlStopke();
