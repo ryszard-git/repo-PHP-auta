@@ -37,7 +37,7 @@ public function WyswietlNaglowek()
 <div class="all">
 
 <div class="topleft">
-       <img src="grafika/baner1.jpg" alt="BaneR" width="980px" height="150px"/>
+       <img src="grafika/baner1.jpg" alt="BaneR" />
 </div>
 
 <?php
@@ -88,24 +88,23 @@ switch ($menu)
 		?>
 		<div class="menulewe">
 
-		<ul id="menu">
-			 <li><a href="zwrot_auta.php">Zwrot auta</a></li>
-			 <li><a href="dodanie_auta.php">Dodanie auta</a></li>
-			 <li><a href="edycja_auta.php">Edycja danych auta</a></li>
-			 <li><a href="usuniecie_auta.php">Usunięcie auta</a></li>
-			<li><a href="#">Historia wypożyczeń</a>
-				<ul>
-				      <li><a href="wyp_auto_klienci.php">Auto - klienci</a></li>
-				      <li><a href="wyp_klient_auta.php">Klient - auta</a></li>
-				</ul>
-			</li>
-			 <li><a href="przeglad_rezerwacji.php">Przeglądanie rezerwacji</a></li>
-			 <li><a href="dodaj_usera.php">Dodanie użytkownika</a></li>
-			 <li><a href="edycja_usera.php">Edycja danych użytkownika</a></li>
-			 <li><a href="zm_hasla_user.php">Zmiana hasła</a></li>
-			 <li><a href="ustaw_hasla_tymczas.php">Reset hasła</a></li>
-		</ul>
-
+			<ul id="menu">
+				<li><a href="#">Historia<br>wypożyczeń</a>
+					<ul>
+						<li><a href="wyp_auto_klienci.php">Auto - klienci</a></li>
+						<li><a href="wyp_klient_auta.php">Klient - auta</a></li>
+					</ul>
+				</li>
+				<li><a href="zwrot_auta.php">Zwrot<br>auta</a></li>
+				<li><a href="dodanie_auta.php">Dodanie<br>auta</a></li>
+				<li><a href="edycja_auta.php">Edycja<br>danych auta</a></li>
+				<li><a href="usuniecie_auta.php">Usunięcie<br>auta</a></li>
+				<li><a href="przeglad_rezerwacji.php">Przeglądanie<br>rezerwacji</a></li>
+				<li><a href="dodaj_usera.php">Dodanie<br>użytkownika</a></li>
+				<li><a href="edycja_usera.php">Edycja<br>danych użytkownika</a></li>
+				<li><a href="zm_hasla_user.php">Zmiana<br>hasła</a></li>
+				<li><a href="ustaw_hasla_tymczas.php">Reset<br>hasła</a></li>
+			</ul>
 		</div>
 		<?php
 	break;

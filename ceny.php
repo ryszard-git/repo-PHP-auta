@@ -9,16 +9,22 @@ $stronka->WyswietlMenu("MenuCenyKontakt");
 $stronka->WyswietlZawartosc();
 ?>
 	<div class="test">
-<table>
-	<tr><td><img src="grafika/corsa.jpeg" alt="osobowy" width="150px" height="100px" /></td>
-	<td>&nbsp;&nbsp;Samochody osobowe - cena od 90 pln za dobę</td></tr>
+		<div>
+			<div>
+				<img src="grafika/corsa.jpeg" alt="osobowy" width="150px" height="100px" />
+				<p>Osobowe - od 90 pln za dobę</p>
+			</div>
 
-	<tr><td><img src="grafika/sprinter-bus.jpeg" alt="mikrobus" width="150px" height="100px" /></td>
-	<td>&nbsp;&nbsp;Mikrobusy - cena od 200 pln za dobę</td></tr>
-
-	<tr><td><img src="grafika/vw-transporter.jpeg" alt="dostawczy" width="150px" height="100px" /></td>
-	<td>&nbsp;&nbsp;Samochody dostawcze - cena od 150 pln za dobę</td></tr>
-</table>
+			<div>
+				<img src="grafika/sprinter-bus.jpeg" alt="mikrobus" width="150px" height="100px" />
+				<p>Mikrobusy - od 200 pln za dobę</p>
+			</div>
+			<div>
+				<img src="grafika/vw-transporter.jpeg" alt="dostawczy" width="150px" height="100px" />
+				<p>Dostawcze - od 150 pln za dobę</p>
+			</div>
+		</div>
+		
 	</div>
 
 <?php 

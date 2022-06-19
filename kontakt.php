@@ -10,10 +10,10 @@ $stronka->WyswietlMenu("MenuCenyKontakt");
 $stronka->WyswietlZawartosc();
 ?>
 	<div class="kontakt">
-<p>Zakres działalności: KOMIS I WYPOŻYCZALNIA AUT<br/>
-Nazwa firmy: AUTO-RYSZARD S.C. Ryszard Kowalski<br/>
-adres: ul. Prosta 21<br/>
-kod i miasto: 80-609 Gdańsk<br/><br/>
+<p>KOMIS I WYPOŻYCZALNIA AUT<br/><br/>
+AUTO-RYSZARD S.C. Ryszard Kowalski<br/><br/>
+ul. Prosta 21<br/><br/>
+80-609 Gdańsk<br/><br/><br/>
 
 NIP: 1234567890<br/>
 REGON: 987654321<br/><br/>
