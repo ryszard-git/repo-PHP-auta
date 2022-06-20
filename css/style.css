@@ -15,7 +15,7 @@ body {
 .all
 {
    	width: 100%;
-    height: auto;
+    min-height: 800px;
     background-color: #000000;
 	margin: 10px auto;
 	display: inline-block;
@@ -24,7 +24,7 @@ body {
 .topleft > img
 {
     width: 30%;
-    height: 100px;
+    /*height: 100px;*/
 }
 
 .menulewe
@@ -39,8 +39,8 @@ body {
 .tresc
 {
     float: right;
-    width: 100%; /*830px*/
-    min-height: 625px;
+    width: 100%; 
+	min-height: 750px;
 	padding: 10px;
 
 	/*background-color: rgb(44, 141, 44);*/
@@ -211,7 +211,7 @@ p.wyloguj > span
 .przeglad-auto-klient
 {
 	--szerokosc-komorki: 8em; /*5 kolumn */
-	--szerokosc-wiersza: 45.8em;
+	--szerokosc-wiersza: 35.7em;
 }
 
 .przeglad-klient-auto
@@ -284,7 +284,7 @@ select
 	padding: 5px;
 	border-radius: 20px;
 	height: 40px;
-	width: 100%;
+	/*width: 100%;*/
 	text-align: center;
 }
 
