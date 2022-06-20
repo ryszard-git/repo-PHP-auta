@@ -4,7 +4,7 @@ require_once("Strona.php");
 $stronka=new Strona();
 $stronka->tytul="Ceny";
 $stronka->WyswietlNaglowek();
-$stronka->nazwaokna="Ceny aut przeznaczonych do wypożyczenia";
+$stronka->nazwaokna="Ceny aut oferowanych do wypożyczenia";
 $stronka->WyswietlMenu("MenuCenyKontakt");
 $stronka->WyswietlZawartosc();
 ?>
