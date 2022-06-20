@@ -45,13 +45,18 @@ $stronka->WyswietlZawartosc();
 
 echo '<div class="kontakt">';
 ?>
-<form method="post" action="">
-<table>
-<tr><td>login:</td><td><?php echo $select; ?></td></tr>
-<tr><td>nowe hasło:</td><td><input type="password" name="nowe_haslo" size="30"/></td></tr>
-</table>
-<p><input type="submit" name="submit" value="Ustaw hasło"/></p>
-</form>
+<div class="box-input">
+	<form method="post" action="">
+		<div>
+			<label>Login:</label><?php echo $select; ?>
+		</div>
+		<div>
+			<label>Nowe hasło:</label>
+			<input type="password" name="nowe_haslo" size="30"/>
+		</div>
+		<p><input type="submit" name="submit" value="Ustaw hasło"/></p>
+	</form>
+</div>
 <br/><br/><br/>
 <?php
 if (isset($_POST["submit"])) {

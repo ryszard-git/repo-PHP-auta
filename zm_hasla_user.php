@@ -14,15 +14,24 @@ $stronka->WyswietlZawartosc();
 
 ?>
 	<div class="kontakt">
-
-		<form method="post" action="">
-		<table>
-		<tr><td>hasło dotychczasowe:</td><td><input type="password" name="haslo" size="25"/></td></tr>
-		<tr><td>nowe hasło:</td><td><input type="password" name="nowe_haslo" size="25"/></td></tr>
-		<tr><td>powtórz nowe hasło:</td><td><input type="password" name="powt_nowe_haslo" size="25"/></td></tr>
-		</table>
-		<p><input type="submit" name="submit" value="Zmień hasło"/></p>
-		</form>
+		<div class="box-input">
+			<form method="post" action="">
+				<div>
+					<label>Aktualne hasło:</label>
+					<input type="password" name="haslo" size="25"/>
+				</div>
+				<div>
+					<label>Nowe hasło:</label>
+					<input type="password" name="nowe_haslo" size="25"/>
+				</div>
+				<div>
+					<label>Powtórz nowe hasło:</label>
+					<input type="password" name="powt_nowe_haslo" size="25"/>
+				</div>
+				<br>
+				<p><input type="submit" name="submit" value="Zmień hasło"/></p>
+			</form>
+		</div>
 		<br/><br/><br/>
 <?php
 if (isset($_POST['submit'])) {

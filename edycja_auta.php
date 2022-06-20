@@ -48,14 +48,16 @@ while ($wiersz=$result->fetch_object()) {
 
 $display_block="
 <form method=\"post\" action=\"\">
-<p>Wybierz markę auta:
+<label>&nbsp;&nbsp;&nbsp;Marka auta:</label>
+<br>
 <select name=\"idauta\">
 $option_block
 </select>
-<br>
+<br><br>
 <input type=\"submit\" name=\"submit1\" value=\"Wybierz auto\"/></p>
 </form>
 ";
+
 echo "$display_block";
 
 echo '<br /><br /><br />';
@@ -76,19 +78,15 @@ if (isset($_POST["submit1"])) {
 	$marka_auta1=$wiersz->marka_auta;
 
 	echo "Wybrane auto: $marka_auta1 <br /><br />";
-
-	$dane="
-	<form enctype=\"multipart/form-data\" method=\"post\" action=\"\">
-	<table>
-	<tr><td>Cena:</td><td><input type=\"text\" name=\"cena\" value=\"$cena\" size=\"5\" /></td></tr>
-	<tr><td>Zdjęcie:</td><td><input type=\"file\" name=\"zdjecie\" /></td></tr>
-	</table>
-	<input type=\"hidden\" name=\"idauta\" value=\"$idauta\" /><br/>
-	<input type=\"submit\" name=\"submitedit\" value=\"Edytuj dane auta\"/>
-	</form>
+?>
+		<form enctype="multipart/form-data" method="post" action="">
+			<p>Cena:&nbsp;&nbsp;<input style="width:unset;" type="text" name="cena" value="<?php echo $cena; ?>" size="5" /></p><br>
+			<p>Zdjęcie:&nbsp;&nbsp;<input type="file" name="zdjecie" /></p>
+			<input type="hidden" name="idauta" value="<?php echo $idauta; ?>" /><br><br>
+			<input type="submit" name="submitedit" value="Edytuj dane auta" />
+		</form>
 	<br /><br /><br />
-	";
-	echo $dane;
+<?php
 
 } //koniec if(isset)
 

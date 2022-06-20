@@ -47,11 +47,12 @@ while ($wiersz=$result->fetch_object()) {
 
 $display_block="
 <form method=\"post\" action=\"wyp_auto_klienci_1.php\">
-<p>Wybierz auto:
+<label>&nbsp;&nbsp;&nbsp;Wybierz auto:</label>
+<br>
 <select name=\"idauta\">
 $option_block
 </select>
-<br>
+<br><br><br>
 <input type=\"submit\" name=\"submit\" value=\"Wykonaj zapytanie\"/></p>
 </form>
 ";

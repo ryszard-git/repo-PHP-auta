@@ -48,25 +48,43 @@ $wiersz=$result->fetch_object();
 	$telefon=$wiersz->telefon_kli;
 	$email=$wiersz->email_kli;
 	$nr_prawa_jazdy=$wiersz->nr_prawa_jazdy_kli;	
-
-$formularz="
-<form method=\"post\" action=\"\">
-<table>
-<tr><td>Imię:</td><td><input type=\"text\" name=\"imie\" value=\"$imie\" size=\"20\" maxlength=\"30\" /></td></tr>
-<tr><td>Nazwisko:</td><td><input type=\"text\" name=\"nazwisko\" value=\"$nazwisko\" size=\"20\" maxlength=\"50\" /></td></tr>
-<tr><td>Adres:</td><td><input type=\"text\" name=\"adres\" value=\"$adres\" size=\"20\" maxlength=\"30\" /></td></tr>
-<tr><td>Miasto:</td><td><input type=\"text\" name=\"miasto\" value=\"$miasto\" size=\"20\" maxlength=\"30\"/></td></tr>
-<tr><td>Telefon:</td><td><input type=\"text\" name=\"telefon\" value=\"$telefon\" size=\"20\" /></td></tr>
-<tr><td>E-mail:</td><td><input type=\"text\" name=\"email\" value=\"$email\" size=\"20\" maxlength=\"30\" /></td></tr>
-<tr><td>Nr prawa jazdy:</td><td><input type=\"text\" name=\"nr_prawa_jazdy\" value=\"$nr_prawa_jazdy\" size=\"20\" /></td></tr>
-</table>
-<br/><br/>
-<input type=\"submit\" name=\"submit\" value=\"Zmień dane\"/></p>
-</form>
+?>
+<div class="box-input">
+	<form method="post" action="">
+		<div>
+			<label>Imię:</label>
+			<input type="text" name="imie" value="<?php echo $imie; ?>" size="20" maxlength="30" />
+		</div>
+		<div>
+			<label>Nazwisko:</label>
+			<input type="text" name="nazwisko" value="<?php echo $nazwisko; ?>" size="20" maxlength="50" />
+		</div>
+		<div>
+			<label>Adres:</label>
+			<input type="text" name="adres" value="<?php echo $adres; ?>" size="20" maxlength="30" />
+		</div>
+		<div>
+			<label>Miasto:</label>
+			<input type="text" name="miasto" value="<?php echo $miasto; ?>" size="20" maxlength="30"/>
+		</div>
+		<div>
+			<label>Telefon:</label>
+			<input type="text" name="telefon" value="<?php echo $telefon; ?>" size="20" />
+		</div>
+		<div>
+			<label>E-mail:</label>
+			<input type="text" name="email" value="<?php echo $email; ?>" size="20" maxlength="30" />
+		</div>
+		<div>
+			<label>Nr prawa jazdy:</label>
+			<input type="text" name="nr_prawa_jazdy" value="<?php echo $nr_prawa_jazdy; ?>" size="20" />
+		</div>
+		<br/><br/>
+		<input type="submit" name="submit" value="Zmień dane"/></p>
+	</form>
+</div>
 <br/><br/><br/>
-";
-echo "$formularz";
-
+<?php
 if (isset($_POST['submit'])) {
 	$imie=addslashes(trim($_POST["imie"]));
 	$nazwisko=addslashes(trim($_POST["nazwisko"]));

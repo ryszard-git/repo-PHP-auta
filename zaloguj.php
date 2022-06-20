@@ -9,17 +9,20 @@ $stronka->WyswietlMenu("Menu_Glowne");
 $stronka->WyswietlZawartosc();
 ?>
 	<div class="kontakt">
-
-		<form method="post" action="">
-		<table border="0">
-		<tr><td>login:</td><td><input type="text" name="login_name" size="25"/></td></tr>
-		<tr><td>hasło:</td><td><input type="password" name="haslo" size="25"/></td></tr>
-		</table>
-		<p><input type="submit" name="submit" value="Zaloguj"/></p>
-		</form>
-
+		<div class="box-input">
+			<form method="post" action="">
+				<div>
+					<label>Login:</label>
+					<input type="text" name="login_name" size="25"/>
+				</div>
+				<div>
+					<label>Hasło:</label>
+					<input type="password" name="haslo" size="25"/>
+				</div>
+				<input type="submit" name="submit" value="Zaloguj"/>
+			</form>
+		</div>
 		<a href="login1raz.php">Rejestracja</a><br/><br/>
-<!--		<a href="zm_hasla.php">zapomniałem_hasła</a> -->
 		<br/><br/><br/>
 
 <?php

@@ -15,15 +15,21 @@ $stronka->WyswietlZawartosc();
 
 
 	<div class="kontakt">
-
-		<form enctype="multipart/form-data" method="post" action="">
-		<table>
-		<tr><td>Wpisz markę auta:</td><td><input type="text" name="marka_auta" size="30" maxlength="70"/></td><tr>
-		<tr><td>Cena:</td><td><input type="text" name="cena" size="5" maxlength="5" /></td></tr>
-		<tr><td>Zdjęcie:</td><td><input type="file" name="zdjecie" /></td></tr>
-		</table>
-		<p><input type="submit" name="submit" value="Dodaj auto"/></p>
-		</form>
+		<div class="box-input">
+			<form enctype="multipart/form-data" method="post" action="">
+			<div>
+				<label>Marka auta:</label>
+				<input type="text" name="marka_auta" size="30" maxlength="70"/>
+			</div>
+			<div>
+				<label>Cena:</label>
+				<input type="text" name="cena" size="5" maxlength="5" />
+			</div>
+			<p style="text-align:center;">Zdjęcie:&nbsp;&nbsp;<input type="file" name="zdjecie" /></p>
+			<br>
+			<input type="submit" name="submit" value="Dodaj auto"/>
+			</form>
+		</div>
 		<br/><br/><br/>
 
 <?php
