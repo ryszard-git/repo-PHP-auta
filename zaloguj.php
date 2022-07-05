@@ -104,6 +104,7 @@ if (isset($_POST['submit'])) {
 		echo "<script>window.location.href = 'menu_admina.php';</script>";
 	}
 	$_SESSION['is_admin']=$isadmin;
+	$_SESSION['banerHref'] = ($_SESSION['is_admin'] === 'TAK') ? './menu_admina.php' : './menu_usera.php';
 
 	$mysqli->close();
 } //if isset

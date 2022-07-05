@@ -41,7 +41,7 @@ $ilosc_aut=$result->num_rows;
 if ($ilosc_aut===0) {
 	echo '<p style=text-align:center;<br/><br/><br/>Brak aut do wynajęcia</p>';
 }
-echo '<table cellpadding="15" class="tabela">';
+echo '<table class="tabela">';
 //wyświetlenie dostępnych aut
 while ($wiersz=$result->fetch_object()) {
 	$id_auta=$wiersz->id_auta;
@@ -49,7 +49,7 @@ while ($wiersz=$result->fetch_object()) {
 	$zdjecie=$dir_name.$wiersz->zdjecie_auta;
 	$cena=$wiersz->cena_auta;
 	echo "<tr><td><span style=\"font-size: 18px;\">$marka_auta</span><br/></td></tr>";
-	echo "<tr><td><img src=\"$zdjecie\" alt=\"auto\" width=\"250px\" height=\"150px\" /></td>";
+	echo "<tr><td><img src=\"$zdjecie\" alt=\"auto\" /></td>";
 	echo "<td>Opłata za wypożyczenie auta: <strong>$cena</strong> PLN za dobę</td>";
 	echo "<td><a href=\"rezerwacja_auta.php?idauta=$id_auta\"><button type=\"button\" class=\"button-rezerwuj\">Rezerwuj auto</button></a></td></tr>";
 	echo '<tr><td colspan="3"><hr/><br/></td></tr>';

@@ -38,7 +38,7 @@ public function WyswietlNaglowek()
 <div class="all">
 
 <div class="topleft">
-       <img src="grafika/baner1.jpg" alt="BaneR" />
+       <a href="<?php if (!empty($_SESSION['banerHref'])) echo $_SESSION['banerHref']; ?>"><img src="grafika/baner1.jpg" alt="BaneR" /></a>
 </div>
 
 <?php

@@ -21,10 +21,9 @@ body {
 	display: inline-block;
 }
 
-.topleft > img
+.topleft > a > img
 {
     width: 30%;
-    /*height: 100px;*/
 }
 
 .menulewe
@@ -42,8 +41,6 @@ body {
     width: 100%; 
 	min-height: 750px;
 	padding: 10px;
-
-	/*background-color: rgb(44, 141, 44);*/
 }
 
 .test 
@@ -198,31 +195,42 @@ p.wyloguj > span
 	margin-right: auto;
 	text-align:center;
 	font-size: 16px;
+	padding: 10px;
 } /* wyśrodkowanie poziome tabeli */
+
+.tabela td
+{
+	padding: 10px;
+}
+
+.tabela td img
+{
+	width: 100%;
+}
 
 /* div zamiast table */
 
 .przeglad-rezerwacji
 {
-	--szerokosc-komorki: 8em; /* 6 kolumn */
-	--szerokosc-wiersza: 54.9em;
+	--szerokosc-komorki: 16.666%; /* 6 kolumn 8em */
+	--szerokosc-wiersza: 700px;  /*54.9em */
 }
 
 .przeglad-auto-klient
 {
-	--szerokosc-komorki: 8em; /*5 kolumn */
-	--szerokosc-wiersza: 35.7em;
+	--szerokosc-komorki: 20%; /*5 kolumn 8em*/
+	--szerokosc-wiersza: 600px; /* 35.7em */
 }
 
 .przeglad-klient-auto
 {
-	--szerokosc-komorki: 8em; /* 3 kolumny */
-	--szerokosc-wiersza: 21.4em;
+	--szerokosc-komorki: 33.333%; /* 3 kolumny */
+	--szerokosc-wiersza: 500px;
 }
 
 div.przeglad
 {
-	width: var(--szerokosc-wiersza);
+	max-width: var(--szerokosc-wiersza);
 	box-sizing: border-box;
 	border: 1px solid #fff;
 	margin: auto;
@@ -230,7 +238,7 @@ div.przeglad
 
 div.przeglad > div
 {
-	width: var(--szerokosc-wiersza);
+	max-width: var(--szerokosc-wiersza);
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -242,6 +250,7 @@ div.przeglad > div > div
 	text-align:center;
 	font-size: 16px;
 	border: 1px solid #fff;
+	word-wrap: break-word;
 }
 /* div zamiast table - koniec*/
 
@@ -284,7 +293,6 @@ select
 	padding: 5px;
 	border-radius: 20px;
 	height: 40px;
-	/*width: 100%;*/
 	text-align: center;
 }
 
